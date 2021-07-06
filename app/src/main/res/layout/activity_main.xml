@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtvMenu"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="76dp"
+        android:text="Convertir de:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtConvertValue"
+        android:layout_width="158dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="380dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvMenu" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="Funciona"
+        android:text="Convertir"
+        app:backgroundTint="#548F57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtConvertValue" />
+
+    <TextView
+        android:id="@+id/txtvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/etxtConvertValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvMenu">
+
+        <RadioButton
+            android:id="@+id/rbMmToCm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milímetros a Centímetros"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <RadioButton
+            android:id="@+id/rbMmToMt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milímetros a Metros"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <RadioButton
+            android:id="@+id/rbMmToKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milímetros a Kilómetros"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <RadioButton
+            android:id="@+id/rbCmToMm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centímetros a Milímetros"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <RadioButton
+            android:id="@+id/rbMtToMm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metros a Milímetros"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <RadioButton
+            android:id="@+id/rbKmToMm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilómetros a Milímetros"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="221dp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
